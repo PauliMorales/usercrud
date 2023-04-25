@@ -1,0 +1,36 @@
+.app {
+  position: relative;
+  background-color: #ffffff33;
+  margin: 2rem;
+  padding: 2em 1.5em;
+  border-radius: 24px;
+}
+.app__header {
+  display: flex;
+  margin-bottom: 1em;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.app__title {
+  font-weight: 600;
+  color: #e0dfdc;
+  text-shadow: 5px 2px 3px #3E1E68;
+  }
+.app__btn {
+  background-color: #3E1E68;
+  color: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5em;
+  transition: transform 200ms ease;
+}
+.app__btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}
+
+.app__user-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+}

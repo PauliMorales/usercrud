@@ -1,0 +1,101 @@
+.user {
+  border: 0.1em solid #3e1e68;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 1.4rem;
+  padding: 1.2em 1em;
+  transition: transform 200ms ease;
+  background-color: #ffffff94;
+}
+.user:hover {
+  transform: scale(1.03);
+}
+.user__name {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  color: #3e1e68;
+  text-shadow: 5px 2px 3px #676668;
+}
+.user__list {
+  display: grid;
+  gap: 0.8em;
+  margin-bottom: 0.8em;
+}
+.user__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.user__label {
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: relative;
+  left: 1.2em;
+  color: #f9d9ff;
+  text-shadow: 2px 1px 5px #3e1e68;
+}
+.user__value {
+  font-size: 0.8rem;
+}
+.user__footer {
+  display: flex;
+  justify-content: end;
+  gap: 1em;
+}
+.user__btn {
+  width: 2.5em;
+  aspect-ratio: 1;
+  border-radius: 0.4em;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.user__btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0.3em #0005;
+  filter: brightness(1.1);
+}
+.user__delete {
+  color: white;
+  background-color: #e45a84;
+}
+.user__update {
+  color: #3e1e68;
+  border: 0.05em solid currentColor;
+}
+.user__icon {
+  font-size: 1.2rem;
+}
+/*---- confirmacion eliminar---*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0002;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  background-color: #eaddfb ;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+.modal-container p {
+  margin: 0 0 1rem;
+}
+
+.modal-container button {
+  margin-right: 2rem;
+  font-size: 12px;
+  background-color: #3e1e68;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5em;
+  height: 2rem;
+  width: 2rem;
+}

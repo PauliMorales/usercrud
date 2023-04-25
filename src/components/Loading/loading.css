@@ -1,0 +1,43 @@
+.loading {
+  position: fixed;
+  background: #3E1E68;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hypnotic {
+    width: 56px;
+    height: 56px;
+    border: 4.2px solid #d5bff1;
+    border-radius: 50%;
+    display: grid;
+    animation: hypnotic-ss6pk4 3.5s infinite linear;
+    transform-origin: 50% 80%;
+ }
+ 
+ .hypnotic:before,
+ .hypnotic:after {
+    content: "";
+    grid-area: 1/1;
+    border: inherit;
+    border-radius: 50%;
+    animation: inherit;
+    animation-duration: 1s;
+    transform-origin: inherit;
+ }
+ 
+ .hypnotic:after {
+    --s: -1;
+ }
+ 
+ @keyframes hypnotic-ss6pk4 {
+    100% {
+       transform: rotate(calc(var(--s,1)*1turn));
+    }
+ }
