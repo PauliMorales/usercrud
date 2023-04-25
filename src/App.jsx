@@ -4,6 +4,7 @@ import useUserCrud from "./hooks/useUserCrud";
 import UserCard from "./components/UserCard/UserCard";
 import FormUser from "./components/FormUser/FormUser";
 import Loading from "./components/Loading/Loading";
+import imageUser from "./assets/images/usuario.png"
 
 function App() {
   const [updateInfo, setUpdateInfo] = useState();
@@ -89,16 +90,17 @@ function App() {
             />
           ))
         ) : (
-          <div>
-            <h2>No users found</h2>
+          <div className="app__user-found">
+            <h2 className="app__user-h2">No users found</h2>
+            <img className="app__user-img" src={imageUser} alt="" />
           </div>
         )}
 
         {confirmDelete && (
           <div className="modal">
             <div className="modal-container">
-              <p>¿Estás seguro de que deseas eliminar el registro?</p>
-              <button onClick={handleDeleteYes}>Si</button>
+              <p>¿Are you sure you want to delete this user??</p>
+              <button onClick={handleDeleteYes}>Yes</button>
               <button onClick={handleDeleteNo}>No</button>
             </div>
           </div>
@@ -106,16 +108,16 @@ function App() {
         {deletedModal && (
           <div className="modal">
             <div className="modal-container">
-              <p>Usuario eliminado exitosamente</p>
-              <button onClick={handleCreated}>Listo</button>
+              <p>User deleted successfully</p>
+              <button onClick={handleCreated}>Ok</button>
             </div>
           </div>
         )}
         {createdModal && (
           <div className="modal">
             <div className="modal-container">
-              <p>Usuario agregado exitosamente</p>
-              <button onClick={handleDeleted}>Listo</button>
+              <p>User created successfully</p>
+              <button onClick={handleDeleted}>Ok</button>
             </div>
           </div>
         )}

@@ -14,10 +14,10 @@
 .app__title {
   font-weight: 600;
   color: #e0dfdc;
-  text-shadow: 5px 2px 3px #3E1E68;
-  }
+  text-shadow: 5px 2px 3px #3e1e68;
+}
 .app__btn {
-  background-color: #3E1E68;
+  background-color: #3e1e68;
   color: white;
   padding: 0.5rem 0.5rem;
   border-radius: 0.5em;
@@ -33,4 +33,19 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5em;
+}
+.app__user-found {
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.app__user-h2 {
+  font-weight: 600;
+  color: #e0dfdc;
+  text-shadow: 5px 2px 3px #3e1e68;
+}
+.app__user-img {
+  width: 50%;
 }
