@@ -4,7 +4,7 @@ import { useState } from "react";
 const useUserCrud = () => {
   const [users, setUsers] = useState();
 
-  const url = "https://users-crud.academlo.tech/users/";
+  const url = "http://localhost:8080/api/v1/users/";
 
   //GET
   const getAllUsers = () => {
